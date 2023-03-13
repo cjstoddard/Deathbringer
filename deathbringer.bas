@@ -166,8 +166,8 @@ Print: Print "What is your Name"
   Print #1, Feature5$
   Print #1, "------------------------------"
   Print #1, "EQUIPMENT:"
-  Print #1,  Starting$
   Print #1,  Gear$
+  Print #1,  Starting$
   
   Close #1
   GoTo FinishUp
