@@ -24,5 +24,7 @@ I am aware this is really bad code. I originally wrote this program back in 1990
 At some point I will add pre compiled Windows and Linux binaries for those who do not want to go to the trouble of downloading and installing QB64 or FreeBasic. Sorry OS X users, I do not own a Mac, you are on your own.
 
 Thank you to Professor Dungeon Master for creating the Deathbringer RPG, your hard work and creativity is appreciated.
+
 https://www.patreon.com/DungeonCraftYouTube/posts
+
 https://www.youtube.com/@DUNGEONCRAFT1
