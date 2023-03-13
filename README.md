@@ -18,4 +18,4 @@ QB64 is availble from https://qb64.com/. If you are using QB64, the first line o
 qb64 -c deathbringer.bas
 
 Notes:
-I am aware this is really bad code. I originally wrote this program back in 1990 to roll up D&D characters. While I am capable of cleaning it up and making it into a decent program, I choose not to, I like the old scholl coding because it goes along with the old school feel of the Deathbringer RPG.
+I am aware this is really bad code. I originally wrote this program back in 1990 to roll up D&D characters. While I am capable of cleaning it up and making it into a decent program, I choose not to, I like the old school coding because it goes along with the old school feel of the Deathbringer RPG.
