@@ -37,18 +37,8 @@ Main:
   Print " 4 Witch Hunter"
   Print " 5 Plague Doctor"
   Input CHOICEC
-    If CHOICEC = 1 Then CLASS$ = "Deathbringer"
-    If CHOICEC = 2 Then CLASS$ = "Grimscribe"
-    If CHOICEC = 3 Then CLASS$ = "Scoundrel"
-    If CHOICEC = 4 Then CLASS$ = "Witch Hunter"
-    If CHOICEC = 5 Then CLASS$ = "Plague Doctor"
-    If CHOICEC = 1 Then HITPOINTS = 10
-    If CHOICEC = 2 Then HITPOINTS = 6
-    If CHOICEC = 3 Then HITPOINTS = 8
-    If CHOICEC = 4 Then HITPOINTS = 8
-    If CHOICEC = 5 Then HITPOINTS = 6
     If CHOICEC = 1 Then Gosub DEATHBRINGER
-    If CHOICEC = 2 Then Gosub Grimscribe
+    If CHOICEC = 2 Then Gosub GRIMSCRIBE
     If CHOICEC = 3 Then Gosub SCOUNDREL
     If CHOICEC = 4 Then GoSub WITCH_HUNTER
     If CHOICEC = 5 Then GoSub PLAGUE_DOCTOR
@@ -208,6 +198,8 @@ YesNo:
   Return
 
 DEATHBRINGER:
+  CLASS$ = "Deathbringer"
+  HITPOINTS = 10
   Feature1$ = "Hit Dice: d10. Use any armor or weapons."
   Feature2$ = "Spend a Deathbringer Die to make one extra attack."
   Feature3$ = "Second attack at 5 th level."
@@ -217,6 +209,8 @@ DEATHBRINGER:
 Return
 
 GRIMSCRIBE:
+  CLASS$ = "Grimscribe"
+  HITPOINTS = 6
   Feature1$ = "Hit Dice: d6. Cannot wear armor, simple weapons."
   Feature2$ = "No spell slots. Roll to cast, DC 10."
   Feature3$ = "On a roll of Natural 1 gain 1 Corruption and roll on the Miscast Table."
@@ -226,6 +220,8 @@ GRIMSCRIBE:
 Return
 
 SCOUNDREL:
+  CLASS$ = "Scoundrel"
+  HITPOINTS = 8
   Feature1$ = "Hit Dice: d8. Light armor only, simple weapons."
   Feature2$ = "Advantage when attempting stealth, climbing, listening, lockpicking, searching, etc."
   Feature3$ = "+4 to hit and double damage from behind."
@@ -235,6 +231,8 @@ SCOUNDREL:
 Return
 
 WITCH_HUNTER:
+  CLASS$ = "Witch Hunter"
+  HITPOINTS = 8
   Feature1$ = "Hit Dice: d8. Light armor, martial and simple weapons."
   Feature2$ = "Cast Detect Evil and Protection from Evil 1x per day"
   Feature3$ = "Turn Undead at will."
@@ -244,6 +242,8 @@ WITCH_HUNTER:
 Return
 
 PLAGUE_DOCTOR:
+  CLASS$ = "Plague Doctor"
+  HITPOINTS = 6
   Feature1$ = "Hit Dice: d6. Leather armor only, simple weapons."
   Feature2$ = "Cure Wounds once per patient per day, Cure Disease & Cure Poison 1x per day."
   Feature3$ = "Create 1d4 potions a day (1) acid splash (2) sleep (3) poison spray (4) bomb [d10] (5) healing [d6] (6) hallucinations"
