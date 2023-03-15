@@ -1,3 +1,10 @@
+' ************************************
+' ** Deathbringer.bas 1.0           **
+' ** By Chris Stoddard, March 2023  **
+' ** Based on the Deathbringer RPG  **
+' ** by Professor Dungeon Master    **
+' ************************************
+
 ' Use this if compiling with FreeBasic
 Randomize (Timer, 3)
 ' Use this if compiling with qb64 or using QBasic
@@ -5,6 +12,7 @@ Randomize (Timer, 3)
 
 DIM DICE(4)
 
+' Main routine for generating the character
 Main:
   Cls
   GoSub Roll4d6
@@ -41,6 +49,7 @@ Main:
     If CHOICEC = 4 Then GoSub WITCH_HUNTER
     If CHOICEC = 5 Then GoSub PLAGUE_DOCTOR
 
+' Randomly assigns the characters background
 Background:
   DICE(1) = Int(Rnd * 20) + 1 
     If DICE(1) = 1 Then Back$ = "Bounty Hunter"
@@ -64,6 +73,7 @@ Background:
     If DICE(1) = 19 Then Back$ = "Soldier"
     If DICE(1) = 20 Then Back$ = "Urchin"
 
+' Assigns a random misery to the character
 RandomMisery:
   DICE(1) = Int(Rnd * 20) + 1 
     If DICE(1) = 1 Then Misery$ = "Abandoned at birth"
@@ -87,11 +97,13 @@ RandomMisery:
     If DICE(1) = 19  Then Misery$ = "Survived a massacre"
     If DICE(1) = 20  Then Misery$ = "Town ravaged by plague"
 
+' Randomly rolls gold and rations
 StartGear:
   GOLD$ = Str$ (Int(Rnd * 6) + 1)
   RATION$ = Str$ (Int(Rnd * 4) + 1)
   Gear$ = GOLD$ + " GP, " + RATION$ + " days of Rations, 1 Waterskin."
 
+' Prints out the finished character to the screen
 Print: Print "What is your Name"
   Input NAME$
   Print
@@ -127,6 +139,7 @@ Print: Print "What is your Name"
   GoSub YesNo
   If YN = 2 GoTo FinishUp
 
+ ' Outputs the finished character to a text file
   Open NAME$ + ".txt" For OUTPUT As #1
   Print #1,
   Print #1, "Deathbringer Character Sheet 1.0"
@@ -160,12 +173,14 @@ Print: Print "What is your Name"
   Close #1
   GoTo FinishUp
 
+' Rolls 4d6 and puts them in an array
 Roll4d6:
   DICE(1) = Int(Rnd * 6) + 1
   DICE(2) = Int(Rnd * 6) + 1
   DICE(3) = Int(Rnd * 6) + 1
   DICE(4) = Int(Rnd * 6) + 1
 
+' Bubble sort routine to sort the die rolls from lowest to highest
   Flips = 1
   Do
     Flips = 0
@@ -176,8 +191,11 @@ Roll4d6:
       ENDIF
     Next
   Loop While Flips = 1
+
+' Adds the 3 highest die rolls together
   TOTAL = DICE(2) + DICE(3) + DICE(4)
 
+' Assigns a die roll modifier based on the 4d6 rolls
   If TOTAL = 3 Then TOTAL$ = "-4"
   If TOTAL = 4 Then TOTAL$ = "-3"
   If TOTAL = 5 Then TOTAL$ = "-3"
@@ -197,6 +215,7 @@ Roll4d6:
 
 Return
 
+' Displays rolled attributes and die modifiers
 ShowStat:
   Print "STR: "; STRENGTH ; "/" ; STRENGTH$
   Print "DEX: "; DEXTERITY ; "/" ; DEXTERITY$
@@ -213,6 +232,7 @@ YesNo:
   Input YN
   Return
 
+' Assigns class features
 DEATHBRINGER:
   CLASS$ = "Deathbringer"
   HITPOINTS = 10
@@ -268,5 +288,6 @@ PLAGUE_DOCTOR:
   Starting$ = "Leather beak mask and coat, meat cleaver, medical kit, very suspicious diploma"
 Return
 
+' Ends the program
 FinishUp:
 End
