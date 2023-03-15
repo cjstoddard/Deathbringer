@@ -4,27 +4,21 @@ DIM DICE(4)
 Main:
   Cls
   GoSub Roll4d6
-  GoSub Convert
   STRENGTH = TOTAL
   STRENGTH$ = TOTAL$
   GoSub Roll4d6
-  GoSub Convert
   DEXTERITY = TOTAL
   DEXTERITY$ = TOTAL$
   GoSub Roll4d6
-  GoSub Convert
   CONSTITUTION = TOTAL
   CONSTITUTION$ = TOTAL$
   GoSub Roll4d6
-  GoSub Convert
   INTELLIGENCE = TOTAL
   INTELLIGENCE$ = TOTAL$
   GoSub Roll4d6
-  GoSub Convert
   WISDOM = TOTAL
   WISDOM$ = TOTAL$
   GoSub Roll4d6
-  GoSub Convert
   CHARISMA = TOTAL
   CHARISMA$ = TOTAL$
 
@@ -179,7 +173,25 @@ Roll4d6:
     Next
   Loop While Flips = 1
   TOTAL = DICE(2) + DICE(3) + DICE(4)
-  Return
+
+  If TOTAL = 3 Then TOTAL$ = "-4"
+  If TOTAL = 4 Then TOTAL$ = "-3"
+  If TOTAL = 5 Then TOTAL$ = "-3"
+  If TOTAL = 6 Then TOTAL$ = "-2"
+  If TOTAL = 7 Then TOTAL$ = "-2"
+  If TOTAL = 8 Then TOTAL$ = "-1"
+  If TOTAL = 9 Then TOTAL$ = "-1"
+  If TOTAL = 10 Then TOTAL$ = "+0"
+  If TOTAL = 11 Then TOTAL$ = "+0"
+  If TOTAL = 12 Then TOTAL$ = "+1"
+  If TOTAL = 13 Then TOTAL$ = "+1"
+  If TOTAL = 14 Then TOTAL$ = "+2"
+  If TOTAL = 15 Then TOTAL$ = "+2"
+  If TOTAL = 16 Then TOTAL$ = "+3"
+  If TOTAL = 17 Then TOTAL$ = "+3"
+  If TOTAL = 18 Then TOTAL$ = "+4"
+
+Return
 
 ShowStat:
   Print "STR: "; STRENGTH ; "/" ; STRENGTH$
@@ -202,7 +214,7 @@ DEATHBRINGER:
   HITPOINTS = 10
   Feature1$ = "Hit Dice: d10. Use any armor or weapons."
   Feature2$ = "Spend a Deathbringer Die to make one extra attack."
-  Feature3$ = "Second attack at 5 th level."
+  Feature3$ = "Second attack at 5th level."
   Feature4$ = ""
   Feature5$ = ""
   Starting$ = " doublet, shield, 2 weapons"
@@ -250,25 +262,6 @@ PLAGUE_DOCTOR:
   Feature4$ = ""
   Feature5$ = ""
   Starting$ = "Leather beak mask and coat, meat cleaver, medical kit, very suspicious diploma"
-Return
-
-Convert:
-  If TOTAL = 3 Then TOTAL$ = "-4"
-  If TOTAL = 4 Then TOTAL$ = "-3"
-  If TOTAL = 5 Then TOTAL$ = "-3"
-  If TOTAL = 6 Then TOTAL$ = "-2"
-  If TOTAL = 7 Then TOTAL$ = "-2"
-  If TOTAL = 8 Then TOTAL$ = "-1"
-  If TOTAL = 9 Then TOTAL$ = "-1"
-  If TOTAL = 10 Then TOTAL$ = "+0"
-  If TOTAL = 11 Then TOTAL$ = "+0"
-  If TOTAL = 12 Then TOTAL$ = "+1"
-  If TOTAL = 13 Then TOTAL$ = "+1"
-  If TOTAL = 14 Then TOTAL$ = "+2"
-  If TOTAL = 15 Then TOTAL$ = "+2"
-  If TOTAL = 16 Then TOTAL$ = "+3"
-  If TOTAL = 17 Then TOTAL$ = "+3"
-  If TOTAL = 18 Then TOTAL$ = "+4"
 Return
 
 FinishUp:
