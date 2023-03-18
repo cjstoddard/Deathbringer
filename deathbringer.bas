@@ -213,7 +213,9 @@ Roll4d6:
   If TOTAL = 17 Then TOTAL$ = "+3"
   If TOTAL = 18 Then TOTAL$ = "+4"
 
-' Alternate bell curve
+' Alternate bell curve. I present this as an alternative to the standard D&D Modifier table,
+' to account for Deathbringers point buy maximim being +6. Be aware that this will produce
+' sigificantly better characters. I recomend using the standard D&D Modifier table.
 '  If TOTAL = 3 Then TOTAL$ = "-2"
 '  If TOTAL = 4 Then TOTAL$ = "-2"
 '  If TOTAL = 5 Then TOTAL$ = "-1"
