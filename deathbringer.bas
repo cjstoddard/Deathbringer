@@ -195,7 +195,7 @@ Roll4d6:
 ' Adds the 3 highest die rolls together
   TOTAL = DICE(2) + DICE(3) + DICE(4)
 
-' Assigns a die roll modifier based on the 4d6 rolls
+' Assigns a die roll modifier based on the 4d6 rolls, based on the standard D&D Modifier table.
   If TOTAL = 3 Then TOTAL$ = "-4"
   If TOTAL = 4 Then TOTAL$ = "-3"
   If TOTAL = 5 Then TOTAL$ = "-3"
