@@ -213,6 +213,24 @@ Roll4d6:
   If TOTAL = 17 Then TOTAL$ = "+3"
   If TOTAL = 18 Then TOTAL$ = "+4"
 
+' Alternate bell curve
+'  If TOTAL = 3 Then TOTAL$ = "-2"
+'  If TOTAL = 4 Then TOTAL$ = "-2"
+'  If TOTAL = 5 Then TOTAL$ = "-1"
+'  If TOTAL = 6 Then TOTAL$ = "-1"
+'  If TOTAL = 7 Then TOTAL$ = "+0"
+'  If TOTAL = 8 Then TOTAL$ = "+0"
+'  If TOTAL = 9 Then TOTAL$ = "+1"
+'  If TOTAL = 10 Then TOTAL$ = "+1"
+'  If TOTAL = 11 Then TOTAL$ = "+2"
+'  If TOTAL = 12 Then TOTAL$ = "+2"
+'  If TOTAL = 13 Then TOTAL$ = "+3"
+'  If TOTAL = 14 Then TOTAL$ = "+3"
+'  If TOTAL = 15 Then TOTAL$ = "+4"
+'  If TOTAL = 16 Then TOTAL$ = "+4"
+'  If TOTAL = 17 Then TOTAL$ = "+5"
+'  If TOTAL = 18 Then TOTAL$ = "+6"
+
 Return
 
 ' Displays rolled attributes and die modifiers
