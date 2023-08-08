@@ -1,18 +1,18 @@
-#' ************************************
-#' ** Deathbringer.py 1.1            **
-#' ** By Chris Stoddard, March 2023  **
-#' ** Based on the Deathbringer RPG  **
-#' ** by Professor Dungeon Master    **
-#' ************************************
+#################################
+# Deathbringer.py 1.1           #
+# By Chris Stoddard, March 2023 #
+# Based on the Deathbringer RPG #
+# by Professor Dungeon Master   #
+#################################
 
-###############################
+#################################
 # Import needed libraries
 import random
 
-###############################
+#################################
 # Define functions
 
-###############################
+#################################
 # Print Legal Statement.
 print ("------------------------------------------------------------")
 print ("Legal Statement:")
@@ -21,6 +21,7 @@ print ("product and is not affiliated with Professor Dungeon Master.")
 print ("Deathbringer RPG © 2023 by Professor Dungeon Master.")
 print ("------------------------------------------------------------")
 
+#################################
 # Assign ability scores
 print ('\n')
 print ("You have 8 build points to distribute between your 6 ability scores.")
@@ -103,7 +104,7 @@ if int(Charisma) > int(Build_Points):
 Build_Points = (Build_Points - int(Charisma))
 print ("You Have " + str(Build_Points) + " build points to spend.")
 
-###############################
+#################################
 # Print Ability scores to screen
 print ('\n')
 print ("STR: " + "+" + str(Strength))
@@ -113,7 +114,7 @@ print ("INT: " + "+" + str(Intellegence))
 print ("WIS: " + "+" + str(Wisdom))
 print ("CHR: " + "+" + str(Charisma))
 
-###############################
+#################################
 # Class Section
 print ('\n')
 print ("Choose a Class for your character:")
@@ -174,22 +175,22 @@ if Choose_Class == "5":
     ClassFeature5 = " "
     Equipment_List = "waterskin, Leather beak mask and coat, meat cleaver, medical kit, very suspicious diploma"
 
-###############################
+#################################
 # Randomly chooses background
 Random_Backgrounds = ["Bounty Hunter", "Courtesan", "Duelist", "Executioner", "Farmer", "Grave Robber", "Leech Collector", "Mercenary", "Minor Noble", "Outlaw", "Performer", "Pit Fighter", "Pirate/Sailor", "Priest/nun/monk", "Rat Catcher", "Servant", "Student/Scholar", "Swineherd", "Soldier", "Urchin"]
 Background = random.choice(Random_Backgrounds)
 
-###############################
+#################################
 # Randomly chooses misery
 Random_Misery = ["Abandoned at birth", "Banished from home", "Betrayed by a loved one", "Cursed by vengeful witch", "Disinherited or disowned", "Escaped bondage or prison", "Fled a scandal", "Framed for a crime", "Killed someone important", "Left for dead", "Locusts ate your crops", "Owe someone money", "Pursued by the law", "Raised in the streets", "Reduced to poverty", "Rejected by society", "Ruined by vice", "Suffering from amnesia", "Survived a massacre", "Town ravaged by plague"]
 Misery = random.choice(Random_Misery)
 
-###############################
+#################################
 # Generate Starting gold and rations
 Gold = random.randint(1, 6)
 Rations = random.randint(1, 4)
     
-###############################
+#################################
 # Prints out the finished character to the screen
 print ('\n')
 Character_name = input ("What is your characters name? ")
@@ -224,7 +225,7 @@ print (str(Gold) + " GP")
 print (str(Rations) + " days of rations")
 print (Equipment_List)
 
-###############################
+#################################
 # Write character to a text file using the character name
 YN = input ("Do you want to save this character to a text file, Y or N? ")
 if YN == "N" or YN == "n":
