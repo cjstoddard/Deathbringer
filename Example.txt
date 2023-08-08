@@ -1,0 +1,30 @@
+
+Deathbringer Character Sheet 1.1
+------------------------------
+Character Name: Example
+Background: Priest/nun/monk
+Misery: Owe someone money
+Character Class: Deathbringer
+XP:    _____
+Level: _____
+------------------------------
+STR: +4
+DEX: +2
+CON: +2
+INT: +0
+WIS: +0
+CHR: +0
+
+Hit Points: 7
+
+------------------------------
+Hit Dice: d10. Use any armor or weapons.
+Spend a Deathbringer Die to make one extra attack.
+Second attack at 5th level.
+ 
+ 
+------------------------------
+EQUIPMENT:
+5 GP
+1 days of rations
+waterskin, doublet, shield, 2 weapons
