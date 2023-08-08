@@ -29,7 +29,7 @@ print ("No single ability score can exceed +6")
 
 Build_Points = 8
 
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 Strength = input ("How many build points do you want to assign to Strength? ")
 if Build_Points == 0:
@@ -41,7 +41,7 @@ if int(Strength) < 0:
 if int(Strength) > Build_Points:
     Strength = str(Build_Points)
 Build_Points = (Build_Points - int(Strength))
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 Dexterity = input ("How many build points do you want to assign to Dexterity? ")
 if Build_Points == 0:
@@ -53,7 +53,7 @@ if int(Dexterity) < 0:
 if int(Dexterity) > Build_Points:
     Dexterity = str(Build_Points)
 Build_Points = (Build_Points - int(Dexterity))
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 Constitution = input ("How many build points do you want to assign to Constitution? ")
 if Build_Points == 0:
@@ -65,7 +65,7 @@ if int(Constitution) < 0:
 if int(Constitution) > Build_Points:
     Constitution = str(Build_Points)
 Build_Points = (Build_Points - int(Constitution))
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 Intellegence = input ("How many build points do you want to assign to Intellegence? ")
 if Build_Points == 0:
@@ -77,7 +77,7 @@ if int(Intellegence) < 0:
 if int(Intellegence) > Build_Points:
     Intellegence = str(Build_Points)
 Build_Points = (Build_Points - int(Intellegence))
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 Wisdom = input ("How many build points do you want to assign to Wisdom? ")
 if Build_Points == 0:
@@ -89,7 +89,7 @@ if int(Wisdom) < 0:
 if int(Wisdom) > Build_Points:
     Wisdom = str(Build_Points)
 Build_Points = (Build_Points - int(Wisdom))
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 Charisma = input ("How many build points do you want to assign to Charisma? ")
 if Build_Points == 0:
@@ -101,7 +101,7 @@ if int(Charisma) < 0:
 if int(Charisma) > int(Build_Points):
     Charisma = str(Build_Points)
 Build_Points = (Build_Points - int(Charisma))
-print ("You Have " + str(Build_Points) + " to spend.")
+print ("You Have " + str(Build_Points) + " build points to spend.")
 
 ###############################
 # Print Ability scores to screen
