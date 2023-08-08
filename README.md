@@ -15,7 +15,7 @@ This program was writen for Qbasic and can be compiled with QB64 or FreeBasic;
 
 FreeBasic is available at https://www.freebasic.net/. To compile under FreeBasic, use the folowing;
 
-fbc -lang qb deathbringer.bas -x binaries/deathbringer 
+fbc -lang qb deathbringer.bas -x deathbringer 
 
 I am aware this is really bad code. I originally wrote this program back in the early 90's to roll up D&D characters. While I am capable of cleaning it up and making it into a decent program, I choose not to, I like the old school coding because it goes along with the old school feel of the Deathbringer RPG. 
 
