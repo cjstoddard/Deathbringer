@@ -23,7 +23,7 @@ Deathbringer.py: This program does use the point buy system used in the RPG rule
 
 https://www.howtogeek.com/197947/how-to-install-python-on-windows/
 
-If you are completely unfamilar with Python, it is a fairly easy programing language to learn. There are many good tutorials on the internet for learning the basics of Python. Below is an hour long Youtube video that gives you pretty much everything you need to know about Python to understand how this program works so you can start modifing it for you own purposes. One of my goals here was to build a simple enough code base where even someone with no Python experience can add thier own Classes, backgrounds or Miseries just by looking at the code and doing a bit of copy/paste and modify work. I encourage everyone to copy this program, modify it and make it your own.
+If you are completely unfamilar with Python, it is a fairly easy programing language to learn. There are many good tutorials on the internet for learning the basics of Python. Below is an hour long Youtube video that gives you pretty much everything you need to know about Python to understand how this program works so you can start modifing it for you own purposes. One of my goals here was to build a simple enough code base where even someone with no Python experience can add thier own Classes, Backgrounds or Miseries just by looking at the code and doing a bit of copy/paste and modify work. I encourage everyone to copy this program, modify it and make it your own.
 
 https://www.youtube.com/watch?v=kqtD5dpn9C8&t=1882s
 
