@@ -76,7 +76,7 @@ if int(Intellegence) < 0:
     Constitution = "0"
 if int(Intellegence) > Build_Points:
     Intellegence = str(Build_Points)
-(Build_Points) = (Build_Points - int(Intellegence))
+Build_Points = (Build_Points - int(Intellegence))
 print ("You Have " + str(Build_Points) + " to spend.")
 
 Wisdom = input ("How many build points do you want to assign to Wisdom? ")
@@ -247,7 +247,7 @@ with open(Character_name + '.txt', 'w') as f:
     f.write ("INT: " + "+" + str(Intellegence) +'\n')
     f.write ("WIS: " + "+" + str(Wisdom) +'\n')
     f.write ("CHR: " + "+" + str(Charisma) +'\n')
-    f.write  ('\n')
+    f.write ('\n')
     f.write ("Hit Points: " + str(HITPOINTS) +'\n')
     f.write ('\n')
     f.write ("------------------------------" +'\n')
