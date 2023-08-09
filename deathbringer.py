@@ -3,6 +3,10 @@
 # By Chris Stoddard, March 2023 #
 # Based on the Deathbringer RPG #
 # by Professor Dungeon Master   #
+# This code is licensed under   #
+# the Creative Commons          #
+# Attribution-NonCommercial     #
+# 4.0 License.                  #
 #################################
 
 #################################
