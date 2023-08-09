@@ -32,12 +32,12 @@ def Spend_Points():
 
 #################################
 # Print Legal Statement.
-print ("------------------------------------------------------------")
-print ("Legal Statement:")
-print ("This Deathbringer Character Generator is an independent")
-print ("product and is not affiliated with Professor Dungeon Master.")
-print ("Deathbringer RPG © 2023 by Professor Dungeon Master.")
-print ("------------------------------------------------------------")
+print ('------------------------------------------------------------')
+print ('Legal Statement: This Deathbringer Character Generator is an')
+print ('independent product and is not affiliated with Dan')
+print ('Professor Dungeon Master" Masters. Deathbringer RPG © 2023')
+print ('by Dan "Professor Dungeon Master" Masters.')
+print ('------------------------------------------------------------')
 
 #################################
 # Assign ability scores
