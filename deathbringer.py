@@ -17,18 +17,18 @@ import random
 # Define functions
 def Spend_Points():
     global Build_Points
-    Temp = input ("? ")
+    Spent_Points = input ("? ")
     if Build_Points == 0:
-        Temp = "0"
-    if int(Temp) > 6:
-        Temp = "6"
-    if int(Temp) < 0:
-        Temp = "0"
-    if int(Temp) > Build_Points:
-        Temp = str(Build_Points)
-    Build_Points = (Build_Points - int(Temp))
+        Spent_Points = "0"
+    if int(Spent_Points) > 6:
+        Spent_Points = "6"
+    if int(Spent_Points) < 0:
+        Spent_Points = "0"
+    if int(Spent_Points) > Build_Points:
+        Spent_Points = str(Build_Points)
+    Build_Points = (Build_Points - int(Spent_Points))
     print ("You Have " + str(Build_Points) + " build points to spend.")
-    return (Temp)
+    return (Spent_Points)
 
 #################################
 # Print Legal Statement.
