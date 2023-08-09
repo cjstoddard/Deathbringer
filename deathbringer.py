@@ -35,7 +35,7 @@ def Spend_Points():
 print ('------------------------------------------------------------')
 print ('Legal Statement: This Deathbringer Character Generator is an')
 print ('independent product and is not affiliated with Dan')
-print ('Professor Dungeon Master" Masters. Deathbringer RPG © 2023')
+print ('"Professor Dungeon Master" Masters. Deathbringer RPG © 2023')
 print ('by Dan "Professor Dungeon Master" Masters.')
 print ('------------------------------------------------------------')
 
