@@ -15,6 +15,20 @@ import random
 
 #################################
 # Define functions
+def Spend_Points():
+    global Build_Points
+    Temp = input ("? ")
+    if Build_Points == 0:
+        Temp = "0"
+    if int(Temp) > 6:
+        Temp = "6"
+    if int(Temp) < 0:
+        Temp = "0"
+    if int(Temp) > Build_Points:
+        Temp = str(Build_Points)
+    Build_Points = (Build_Points - int(Temp))
+    print ("You Have " + str(Build_Points) + " build points to spend.")
+    return (Temp)
 
 #################################
 # Print Legal Statement.
@@ -31,82 +45,32 @@ print ('\n')
 print ("You have 8 build points to distribute between your 6 ability scores.")
 print ("Strength, Dexerity, Constitution, Intellegence, Wisdom and Charisma.")
 print ("No single ability score can exceed +6")
+print ('\n')
 
 Build_Points = 8
 
 print ("You Have " + str(Build_Points) + " build points to spend.")
 
-Strength = input ("How many build points do you want to assign to Strength? ")
-if Build_Points == 0:
-    Strength = "0"
-if int(Strength) > 6:
-    Strength = "6"
-if int(Strength) < 0:
-    Strength = "0"
-if int(Strength) > Build_Points:
-    Strength = str(Build_Points)
-Build_Points = (Build_Points - int(Strength))
-print ("You Have " + str(Build_Points) + " build points to spend.")
-
-Dexterity = input ("How many build points do you want to assign to Dexterity? ")
-if Build_Points == 0:
-    Dexterity = "0"
-if int(Dexterity) > 6:
-    Dexterity = "6"
-if int(Dexterity) < 0:
-    Dexterity = "0"
-if int(Dexterity) > Build_Points:
-    Dexterity = str(Build_Points)
-Build_Points = (Build_Points - int(Dexterity))
-print ("You Have " + str(Build_Points) + " build points to spend.")
-
-Constitution = input ("How many build points do you want to assign to Constitution? ")
-if Build_Points == 0:
-    Constitution = "0"
-if int(Constitution) > 6:
-    Constitution = "6"
-if int(Constitution) < 0:
-    Constitution = "0"
-if int(Constitution) > Build_Points:
-    Constitution = str(Build_Points)
-Build_Points = (Build_Points - int(Constitution))
-print ("You Have " + str(Build_Points) + " build points to spend.")
-
-Intellegence = input ("How many build points do you want to assign to Intellegence? ")
-if Build_Points == 0:
-    Intellegence = "0"
-if int(Intellegence) > 6:
-    Intellegence = "6"
-if int(Intellegence) < 0:
-    Constitution = "0"
-if int(Intellegence) > Build_Points:
-    Intellegence = str(Build_Points)
-Build_Points = (Build_Points - int(Intellegence))
-print ("You Have " + str(Build_Points) + " build points to spend.")
-
-Wisdom = input ("How many build points do you want to assign to Wisdom? ")
-if Build_Points == 0:
-    Wisdom = "0"
-if int(Wisdom) > 6:
-    Wisdom = "6"
-if int(Wisdom) < 0:
-    Wisdom = "0"
-if int(Wisdom) > Build_Points:
-    Wisdom = str(Build_Points)
-Build_Points = (Build_Points - int(Wisdom))
-print ("You Have " + str(Build_Points) + " build points to spend.")
-
-Charisma = input ("How many build points do you want to assign to Charisma? ")
-if Build_Points == 0:
-    Charisma = "0"
-if int(Charisma) > 6:
-    Charisma = "6"
-if int(Charisma) < 0:
-    Charisma = "0"
-if int(Charisma) > int(Build_Points):
-    Charisma = str(Build_Points)
-Build_Points = (Build_Points - int(Charisma))
-print ("You Have " + str(Build_Points) + " build points to spend.")
+counter = range(6)
+for count in counter:
+    if count == 0:
+        print ("How many build points do you want to assign to Strength:")
+        Strength = Spend_Points()
+    if count == 1:
+        print ("How many build points do you want to assign to Dexterity:")
+        Dexterity = Spend_Points()
+    if count == 2:
+        print ("How many build points do you want to assign to Constitution:")
+        Constitution = Spend_Points()
+    if count == 3:
+        print ("How many build points do you want to assign to Intellegence:")
+        Intellegence = Spend_Points()
+    if count == 4:
+        print ("How many build points do you want to assign to Wisdom:")
+        Wisdom = Spend_Points()
+    if count == 5:
+        print ("How many build points do you want to assign to Charisma:")
+        Charisma = Spend_Points()
 
 #################################
 # Print Ability scores to screen
